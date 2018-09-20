@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 10% repeat(2, 50%) 10%;
+  grid-gap: 4px;
+}
+
+.menu {
+  background: lightblue;
+  grid-column: 1/6;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  background: lightyellow;
+  grid-row: 2/5;
+  grid-column: 1/2;
+}
+
+.sidebar .profile {
+  grid-row: 2;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 75%;
+}
+
+.profile p {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Cedarville Cursive", cursive;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.konten {
+  background: pink;
+  grid-column: 2/6;
+}
+
+.footer {
+  text-align: center;
+  background: lime;
+  grid-column: 1/6;
+  grid-row: 4/5;
+  font-family: "Merienda", cursive;
+  font-size: 27px;
+}
