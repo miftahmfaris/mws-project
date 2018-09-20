@@ -1,4 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.items {
+  max-width: 50%;
+}
+
 #mapid {
-  height: 500px;
+  height: 400px;
   width: 500px;
+  border: #132e58 3px dotted;
+  padding: 10px;
+  margin-bottom: 5px;
 }

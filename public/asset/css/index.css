@@ -4,18 +4,26 @@
   margin: 0;
 }
 
+body {
+  margin: 5px 30px 0 30px;
+}
+
 .container {
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-columns: repeat(4, 20%);
-  grid-template-rows: 10% repeat(2, 50%) 10%;
+  grid-template-rows: 10% repeat(2, 40%) 8%;
   grid-gap: 4px;
 }
 
 .menu {
   background: lightblue;
   grid-column: 1/6;
+}
+
+.menu img {
+  width: 71px;
 }
 
 .sidebar {
@@ -34,6 +42,15 @@
 .profile img {
   border-radius: 50%;
   width: 75%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.profile img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .profile p {
@@ -41,17 +58,39 @@
   padding-top: 10px;
   font-family: "Cedarville Cursive", cursive;
   font-style: italic;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .konten {
   background: pink;
   grid-column: 2/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.konten a {
+  text-decoration: none;
+  color: #fff;
+  border: #fff 3px solid;
+  border-radius: 15px;
+  padding: 10px;
+  background: #f34a4a;
+  transition: transform 0.2s;
+  font-family: "Handlee", cursive;
+}
+
+.konten a:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+  background: #fff;
+  color: #000;
 }
 
 .footer {
   text-align: center;
-  background: lime;
+  background: lightblue;
   grid-column: 1/6;
   grid-row: 4/5;
   font-family: "Merienda", cursive;
