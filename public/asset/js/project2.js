@@ -1,5 +1,16 @@
+var arr_marker = [
+  [-8.70166, 115.169856],
+  [-8.70166, 115.169856],
+  [-8.70166, 115.169856],
+  [-8.70166, 115.169856],
+  [-8.70166, 115.169856],
+  [-6.1602, 106.8198]
+];
 var mymap = L.map("mapid").setView([-6.1602, 106.8198], 13);
-var marker = L.marker([-6.1602, 106.8198]).addTo(mymap);
+// var marker = L.marker(arr_marker).addTo(mymap);
+for (m of arr_marker) {
+  L.marker(m).addTo(mymap);
+}
 var circle = L.circle([-6.1602, 106.8198], {
   color: "red",
   fillColor: "#f03",
