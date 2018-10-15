@@ -1,30 +1,55 @@
-html,
-body,
-#mapid {
-  height: 100%;
-  width: 100vw;
-}
-
 body {
   padding: 0;
   margin: 0;
+  height: 90vh;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+@media only screen and (min-width: 300px) {
+  .container {
+    height: 100%;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .items {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #mapid {
+    min-height: 50vh;
+    min-width: 90%;
+    border: #132e58 3px dotted;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
 }
 
-.items {
-  max-width: 50%;
-}
+@media only screen and (min-width: 960) {
+  .container {
+    height: 100%;
+  }
 
-#mapid {
-  height: 400px;
-  width: 500px;
-  border: #132e58 3px dotted;
-  padding: 10px;
-  margin-bottom: 5px;
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .items {
+    max-width: 50%;
+  }
+
+  #mapid {
+    height: 400px;
+    max-width: 100%;
+    border: #132e58 3px dotted;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
 }
