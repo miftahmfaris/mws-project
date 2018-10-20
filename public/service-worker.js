@@ -28,7 +28,7 @@ self.addEventListener("activate", event => {
         cacheNames
           .filter(cacheName => {
             return (
-              cacheName.startsWith("cache-") && !allCaches.includes(cacheName)
+              cacheName.startsWith("cache-") && !cacheName.includes(cacheName)
             );
           })
           .map(cacheName => {
@@ -39,24 +39,20 @@ self.addEventListener("activate", event => {
   );
 });
 
-self.addEventListener("fetch", event => {
-  console.log("Request event for ", event.request.url);
+self.addEventListener("fetch", function(event) {
   event.respondWith(
     caches
       .match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request).then(response => {
-          if (response.status === 404) {
-            console.log("Page not Found");
-          }
-          return caches.open(cacheAdded).then(cache => {
-            cache.put(event.request.url, response.clone());
-            return response;
-          });
-        });
+      .then(function(resp) {
+        return (
+          resp ||
+          fetch(event.request).then(function(response) {
+            return caches.open(cache_name).then(function(cache) {
+              cache.put(event.request, response.clone());
+              return response;
+            });
+          })
+        );
       })
       .catch(error => {
         return error;
