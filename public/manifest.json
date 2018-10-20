@@ -2,10 +2,10 @@
   "name": "Miftah Faris",
   "short_name": "mfaris",
   "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "background_color": "#fff",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "/",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "./asset/images/icons/icon-72x72.png",
