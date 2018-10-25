@@ -1,0 +1,34 @@
+{
+  "places": [
+    {
+      "location": [-6.221028, 106.791434],
+      "sponsor": "Resto Spanyol",
+      "image": "../asset/images/spanyol.jpg",
+      "review": "restoran spanyol terbaik di Jakarta"
+    },
+    {
+      "location": [-6.219912, 106.791239],
+      "sponsor": "Warung Kopi",
+      "image": "../asset/images/warkop.jpg",
+      "review": "warung kopi cita rasa yang sangat tinggi dengan harga murah"
+    },
+    {
+      "location": [-6.220529, 106.789848],
+      "sponsor": "Pondok Ikan Bakar",
+      "image": "../asset/images/ikanbakar.jpg",
+      "review": "Ikan bakar ter the best, Ikan bakar kualitas tinggi, hampir gosong tapi belum"
+    },
+    {
+      "location": [-6.222977, 106.789152],
+      "sponsor": "STEAK cow",
+      "image": "../asset/images/steak.jpg",
+      "review": "Steak lokal harga impor, 200gr dan 300gr mentah"
+    },
+    {
+      "location": [-6.222043, 106.79107],
+      "sponsor": "Rupa-rupa Seafood!!",
+      "image": "../asset/images/seafood.jpg",
+      "review": "seafood international lobster, king crabs, cumi, kerang, semua ada"
+    }
+  ]
+}

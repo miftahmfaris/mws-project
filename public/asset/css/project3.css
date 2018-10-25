@@ -4,6 +4,14 @@ body {
   height: 90vh;
 }
 
+p {
+  margin: 0px;
+}
+
+#mapImage img {
+  height: 100px !important;
+}
+
 @media only screen and (max-width: 360px) {
   .container {
     height: 100%;
@@ -22,11 +30,27 @@ body {
   }
 
   #mapid {
-    min-height: 50vh;
-    min-width: 90%;
+    min-height: 30vh;
+    min-width: 70%;
     border: #132e58 3px dotted;
     padding: 10px;
     margin-bottom: 5px;
+  }
+
+  #secondBox {
+    min-height: 20vh;
+    border: #132e58 3px dotted;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  #secondBox1 {
+    border-top: #132e58 3px solid;
+    border-bottom: #132e58 3px solid;
+  }
+
+  #secondBox2 {
+    border-bottom: #132e58 3px solid;
   }
 }
 
@@ -42,16 +66,37 @@ body {
   }
 
   .items {
-    max-width: 90%;
+    width: 90%;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
   }
 
   #mapid {
     min-height: 50vh;
-    min-width: 90%;
+    min-width: 50%;
     border: #132e58 3px dotted;
     padding: 10px;
     margin-bottom: 5px;
+  }
+
+  #mapImage {
+    padding-bottom: 5px;
+  }
+
+  #secondBox {
+    min-height: 50vh;
+    border: #132e58 3px dotted;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  #secondBox1 {
+    border-top: #132e58 3px solid;
+    border-bottom: #132e58 3px solid;
+  }
+
+  #secondBox2 {
+    border-bottom: #132e58 3px solid;
   }
 }
